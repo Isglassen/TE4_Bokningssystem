@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book a Room</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/bookingForm.js", type="module"></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,7 @@
       </nav>
     </header>
     <main class="container">
-      <form class="center">
+      <form id="bookingForm" class="center">
         <fieldset>
           <legend>Your information</legend>
           <label for="name">Full Name:</label>
@@ -49,7 +50,7 @@
           <label for="participants">Number of participants</label>
           <input type="number" name="participants" id="participants">
         </fieldset>
-        <input type="checkbox" name="terms" id="terms" required>
+        <input type="checkbox" id="terms" required>
         <label for="terms">I accept terms and conditions</label>
         <br>
         <button type="submit">Book room</button>
