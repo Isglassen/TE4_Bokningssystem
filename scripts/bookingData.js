@@ -1,6 +1,6 @@
 const BOOKING_DATA = [
 	{
-		roomId: 201,
+		roomId: 0,
 		id: 0,
 		date: "2026-08-25",
 		startTime: "13:15",
@@ -11,7 +11,7 @@ const BOOKING_DATA = [
 		}
 	},
 	{
-		roomId: 204,
+		roomId: 1,
 		id: 1,
 		date: "2026-08-25",
 		startTime: "14:30",
@@ -22,7 +22,7 @@ const BOOKING_DATA = [
 		}
 	},
 	{
-		roomId: 204,
+		roomId: 1,
 		id: 2,
 		date: "2026-08-25",
 		startTime: "13:30",
@@ -33,7 +33,7 @@ const BOOKING_DATA = [
 		}
 	},
 	{
-		roomId: 305,
+		roomId: 2,
 		id: 3,
 		date: "2026-08-25",
 		startTime: "12:00",
@@ -44,7 +44,7 @@ const BOOKING_DATA = [
 		}
 	},
 	{
-		roomId: 305,
+		roomId: 2,
 		id: 4,
 		date: "2026-08-25",
 		startTime: "14:30",

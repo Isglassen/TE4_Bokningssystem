@@ -1,27 +1,33 @@
 const ROOM_DATA = {
-	201: {
-		id: 201,
-		name: "Room 201",
-		desciption: "Room 201 is a cool room",
-		img: "room201.jpg",
-		capacity: 5,
-		equipment: ["A thing", "A second thing"],
-	},
-	204: {
-		id: 204,
-		name: "Room 204",
-		desciption: "Room 204 is a fun room",
-		img: "room204.jpg",
+
+	0: {
+		id: 0,
+		name: "The Big Room",
+		desciption: "The big room next to the GOAT Billy",
+		img: "big-room.jpg",
+		imgAlt: "An image of the room",
 		capacity: 7,
-		equipment: ["A fun thing", "A less fun thing"],
+		equipment: ["One big sized square table", "Eight chairs"],
 	},
-	305: {
-		id: 305,
-		name: "Room 305",
-		desciption: "Room 305 is a boring room",
-		img: "room305.jpg",
-		capacity: 3,
-		equipment: [],
+
+	1: {
+		id: 1,
+		name: "The Library",
+		desciption: "The library DUH",
+		img: "library.jpg",
+		imgAlt: "An image of the room",
+		capacity: 5,
+		equipment: ["One medium sized oval table", "Five chairs", "A TON of books"]
+	},
+
+	2: {
+		id: 2,
+		name: "The Triangle Room",
+		desciption: "The triangle room next to the canteen",
+		img: "triange-room.jpg",
+		imgAlt: "An image of the room",
+		capacity: 5,
+		equipment: ["One medium sized oval table", "One rectangular table", "Five chairs"]
 	},
 }
 
