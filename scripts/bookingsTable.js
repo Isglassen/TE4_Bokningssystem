@@ -1,10 +1,7 @@
 import { getBookings } from "./bookingData.js";
+import { getRooms } from "./roomData.js";
 
-const rooms = {
-	201: { name: "201" },
-	204: { name: "204" },
-	305: { name: "305" },
-}
+const rooms = getRooms();
 
 const state = {
 	bookings: getBookings(),
