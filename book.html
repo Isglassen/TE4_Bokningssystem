@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book a Room</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <h1>Book a Room</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="book.html">Book a Room</a>
+        <a href="bookings.html">My Bookings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="rooms.html">Rooms</a>
-      <a href="book.html">Book a Room</a>
-      <a href="bookings.html">My Bookings</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-      <form>
+    <main class="container">
+      <form class="center">
         <fieldset>
           <legend>Your information</legend>
           <label for="name">Full Name:</label>
           <input type="text" name="name" id="name" required>
-          <br>
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" required>
         </fieldset>
@@ -30,31 +30,27 @@
           <legend>Your Booking</legend>
           <label for="room-select">Select Room:</label>
           <select id="room-select" name="room-select" required>
+            <option value="">Select a Room</option>
             <option value="201">Room 201</option>
             <option value="204">Room 204</option>
             <option value="305">Room 305</option>
           </select>
-          <br>
           <label for="date">Booking date:</label>
           <input type="date" name="date" id="date" required>
-          <br>
           <label for="start">Start time:</label>
           <input type="time" name="start" id="start" required>
-          <br>
           <label for="end">End time:</label>
           <input type="time" name="end" id="end" required>
         </fieldset>
         <fieldset>
           <legend>Booking details</legend>
-          <label for="purpose">Purpose of booking:</label>
-          <br>
-          <textarea rows="5" cols="50" id="purpose" name="purpose" required></textarea>
-          <br>
+          <label for="purpose" class="full-width">Purpose of booking:</label>
+          <textarea rows="5" id="purpose" name="purpose" required class="full-width"></textarea>
           <label for="participants">Number of participants</label>
           <input type="number" name="participants" id="participants">
         </fieldset>
-        <label for="terms">I accept terms and conditions</label>
         <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I accept terms and conditions</label>
         <br>
         <button type="submit">Book room</button>
       </form>
