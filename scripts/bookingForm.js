@@ -1,80 +1,90 @@
+import { getRooms } from "./roomData.js";
+
+const roomSelect = document.querySelector("#room-select");
+
+Object.values(getRooms()).forEach(v => {
+	const option = roomSelect.appendChild(document.createElement("option"));
+	option.value = v.id;
+	option.textContent = v.name;
+})
+
 const bookingForm = document.querySelector("#bookingForm");
 const checkBox = document.querySelector("#terms")
 const errorMessageArea = document.querySelector("#errorMessageArea")
 
 function nameInputValidation(nameInput) {
 	if (nameInput.trim() == "") {
-		return {correct: false, errorMessage: "Name can't be empty!"}
+		return { correct: false, errorMessage: "Name can't be empty!" }
 	}
 	else {
-		return {correct: true}
+		return { correct: true }
 	}
 }
 
 function emailInputValidation(emailInput) {
 	if (!emailInput.trim()) {
-		return {correct: false, errorMessage: "Email can't be empty!"}
+		return { correct: false, errorMessage: "Email can't be empty!" }
 	}
 	if (!emailInput.trim().includes("@")) {
-		return {correct: false, errorMessage: "Invalid email!"}
+		return { correct: false, errorMessage: "Invalid email!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function roomInputValidation(roomInput) {
 	if (!roomInput) {
-		return {correct: false, errorMessage: "No room selected!"}
+		return { correct: false, errorMessage: "No room selected!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function dateValidation(date) {
 	if (!date) {
-		return {correct: false, errorMessage: "No date entered!"}
+		return { correct: false, errorMessage: "No date entered!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function startValidation(start) {
 	if (!start) {
-		return {correct: false, errorMessage: "No start time entered!"}
+		return { correct: false, errorMessage: "No start time entered!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function endValidation(end) {
 	if (!end) {
-		return {correct: false, errorMessage: "No end time entered!"}
+		return { correct: false, errorMessage: "No end time entered!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function nrOfParticipantsValidation(nrOfParticipants) {
 	if (isNaN(nrOfParticipants)) {
-		return {correct: false, errorMessage: "Number of participants not entered!"}
+		return { correct: false, errorMessage: "Number of participants not entered!" }
 	}
 
 	if (nrOfParticipants < 0) {
-		return {correct: false, errorMessage: "Number of participants can't be below zero!"}
+		return { correct: false, errorMessage: "Number of participants can't be below zero!" }
 	}
 	if (nrOfParticipants == 0) {
-		return {correct: false, errorMessage: "Number of participants can't be zero!"}
+		return { correct: false, errorMessage: "Number of participants can't be zero!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function purposeValidation(purpose) {
 	if (!purpose.trim()) {
-		return {correct: false, errorMessage: "No purpose entered!"}
+		return { correct: false, errorMessage: "No purpose entered!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 function checkBoxValidation() {
 	if (!checkBox.checked) {
-		return {correct: false, errorMessage: "You must accept our terms and conditions!"}
+		return { correct: false, errorMessage: "You must accept our terms and conditions!" }
 	}
-	return {correct: true}
+	return { correct: true }
 }
 
 
