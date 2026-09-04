@@ -24,7 +24,7 @@ const ROOM_DATA = {
 		id: 2,
 		name: "The Triangle Room",
 		description: "The triangle room next to the canteen",
-		img: "triange-room.jpg",
+		img: "triangle-room.jpg",
 		imgAlt: "An image of the room",
 		capacity: 5,
 		equipment: ["One medium sized oval table", "One rectangular table", "Five chairs"]
