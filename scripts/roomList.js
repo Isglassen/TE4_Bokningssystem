@@ -4,6 +4,16 @@ const roomsSection = document.getElementById("roomList");
 
 const rooms = getRooms();
 
+// Creates the following html for a room and returns it
+// <article>
+//   <h3>NAME</h3>
+//   <p>DESCRIPTION</p>
+//   <img src="IMG" alt="IMG_ALT">
+//   <p>Capacity: CAPACITY</p>
+//   <h4>Equipment</h4>
+//   <ul>EQUIPMENT_LIST<ul> OR <p>Nothing</p>
+//   <a href="book.html">Book this room</a>
+// </article>
 function createRoom(room) {
 	const article = document.createElement("article");
 	article.classList.add("room");
