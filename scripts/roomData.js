@@ -3,7 +3,7 @@ const ROOM_DATA = {
 	0: {
 		id: 0,
 		name: "The Big Room",
-		desciption: "The big room next to the GOAT Billy",
+		description: "The big room next to the GOAT Billy",
 		img: "big-room.jpg",
 		imgAlt: "An image of the room",
 		capacity: 7,
@@ -13,7 +13,7 @@ const ROOM_DATA = {
 	1: {
 		id: 1,
 		name: "The Library",
-		desciption: "The library DUH",
+		description: "The library DUH",
 		img: "library.jpg",
 		imgAlt: "An image of the room",
 		capacity: 5,
@@ -23,7 +23,7 @@ const ROOM_DATA = {
 	2: {
 		id: 2,
 		name: "The Triangle Room",
-		desciption: "The triangle room next to the canteen",
+		description: "The triangle room next to the canteen",
 		img: "triange-room.jpg",
 		imgAlt: "An image of the room",
 		capacity: 5,
